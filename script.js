@@ -12,7 +12,7 @@ const search = document.getElementById("search");
 // TODO: Create asyn function
 async function getMovies (url) {
     const result = await fetch(url);
-    console.log(result);
+    // console.log(result);
     const data = await result.json();
     showMovies(data.results);
 
@@ -54,7 +54,7 @@ function showMovies(movies) {
         main.appendChild(movieEl);
 
         movieEl.addEventListener("click", () => {
-            window.location.href = `movie.html?id${id}`
+            window.location.href = `movie.html?id=${id}`
         })
 
     });
