@@ -29,7 +29,7 @@ getMovies(API_URL);
 function showMovies(movies) {
     main.innerHTML = "";
     movies.forEach((movie) => {
-        const { title, poster, poster_path, vote_average, overview, release_date } = movie;
+        const { title, poster, poster_path, vote_average, overview, release_date, id } = movie;
         const movieEl = document.createElement("div");
         movieEl.innerHTML = `
         <div class="py-3 sm:max-w-xl sm:mx-auto">
@@ -52,6 +52,10 @@ function showMovies(movies) {
             </div>
         </div>`
         main.appendChild(movieEl);
+
+        movieEl.addEventListener("click", () => {
+            window.location.href = `movie.html?id${id}`
+        })
 
     });
 
