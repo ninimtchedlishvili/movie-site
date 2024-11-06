@@ -77,7 +77,7 @@ function rateFun(rate) {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const searchTerm = search.value; //informacias vigeb searchis velidan
+    const searchTerm = search.value;
     getMovies(SEARCH_API + searchTerm);
 })
 
