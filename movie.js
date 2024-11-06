@@ -47,7 +47,7 @@ function showSingleMovie(movie) {
             </div>
             </div>
         </div>`
-
+    document.getElementById("docTitle").innerHTML = title;
     movieCointainer.appendChild(singleMovie);
 }
 

@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="movie.css">
-    <title>Document</title>
+    <title id="docTitle">Document</title>
 </head>
 
 <body>
 
-    <div id="movie-container"></div>
-
-    <div class="mt-[200px]" id="seat-map"></div>
-
-
-    <div class="container mx-auto">
-        <div class="flex flex-col mt-[20px] gap-[5px]">
-            <p>Total tickets:<span id="total-tickets">0</span></p>
-            <p>Total Price: $<span id="total-price">0</span></p>
-        </div>
-        <button id="buy-now"
-        class=" mt-[10px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Buy</button>
-
+    <div class="container mx-auto flex items-center justify-center gap-[80px]">
+        <div id="movie-container"></div>
+        <div class="mt-[200px]" id="seat-map"></div>
+        
     </div>
-
+ 
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto mt-6 space-y-4 mt-[50px]">
+        <div class="flex justify-between items-center text-lg font-semibold">
+            <p>Total Tickets:</p>
+            <span id="total-tickets" class="text-blue-500">0</span>
+        </div>
+        <div class="flex justify-between items-center text-lg font-semibold">
+            <p>Total Price:</p>
+            <span id="total-price" class="text-green-500">$0</span>
+        </div>
+        <button id="buy-now" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+            Buy Now
+        </button>
+    </div>
+    
     
 
     <script src="movie.js"></script>
