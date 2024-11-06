@@ -1,8 +1,8 @@
-.seat.selected {
+.selected {
     background-color: red;
 }
 
-.seat.occupied{
+.occupied{
     background-color: blue;
 
 }
@@ -11,8 +11,3 @@
     margin-top: 150px;
 }
 
-.button{
-    width: 50px;
-    background-color: lightblue;
-    padding: 10px 20px 10px 20px;
-}
